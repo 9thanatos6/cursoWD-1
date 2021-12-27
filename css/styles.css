@@ -28,7 +28,8 @@
     }
 
     header {
-        background-color: #DEE2FF;
+        background: rgb(178,186,255);
+        background: linear-gradient(90deg, rgba(178,186,255,1) 0%, rgba(222,226,255,1) 50%, rgba(178,186,255,1) 100%); 
         grid-area: header;
         display: grid;
         grid-template-columns: 25% 50% 25%;
@@ -59,7 +60,7 @@
 
 
     main {
-        background-color: #EFD3D7;
+        background-color: #f8dcf2;
         grid-area: main;
         display: grid;
         grid-template-columns: 100%;
@@ -82,7 +83,8 @@
     }
     
     #products {
-        background-color: #FEEAFA;
+        background: rgb(250,212,242);
+        background: linear-gradient(90deg, rgba(250,212,242,1) 10%, rgba(254,234,250,1) 35%, rgba(254,234,250,1) 65%, rgba(250,212,242,1) 90%); 
         grid-area: products;
         display: grid;
         grid-template-columns:  auto 320px auto;
@@ -126,7 +128,8 @@
     
     
     footer {
-        background-color: #CBC0D3;
+        background: rgb(180,168,188);
+        background: linear-gradient(0deg, rgba(180,168,188,1) 10%, rgba(203,192,211,1) 35%, rgba(203,192,211,1) 65%, rgba(180,168,188,1) 90%); 
         grid-area: footer;
         display: grid;
         grid-template-columns: 100%;
@@ -180,7 +183,8 @@
     }
     
     #rights {
-        background-color: #8E9AAF;
+        background: rgb(142,154,175);
+        background: linear-gradient(90deg, rgba(142,154,175,1) 5%, rgba(111,122,142,1) 25%, rgba(111,122,142,1) 75%, rgba(142,154,175,1) 95%);  
         grid-area: rights;
         display: flex;
         justify-content: center;
