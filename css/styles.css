@@ -1,0 +1,402 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+
+
+
+
+@media only screen and (min-width: 320px) {
+
+    body {
+        /* background-color: azure; */
+        width: 100vw;
+        height: 100vh;
+        min-height: 1200px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 6% 72% 22%;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer"
+        ;
+    }
+
+    header {
+        background-color: #DEE2FF;
+        grid-area: header;
+        display: grid;
+        grid-template-columns: 25% 50% 25%;
+        grid-template-rows: 100%;
+        grid-template-areas:
+        ". logo nav"
+        ;
+    }
+
+    #logo {
+        background-color: white;
+        grid-area: logo;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 45px;
+        font-family: none;
+    }
+
+    nav {
+        /* background-color: yellow; */
+        grid-area: nav;
+        font-size: 11px;
+    }
+
+
+
+
+
+    main {
+        background-color: #EFD3D7;
+        grid-area: main;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 3% 30% 3% 61% 3%;
+        grid-template-areas:
+        "."
+        "hero"
+        "."
+        "products"
+        "."
+        ;
+    }
+    
+    #hero {
+        /* background-color: greenyellow; */
+        background-image: url(../images/p_img/ice_cream.jpg);
+        background-size: cover;
+        background-position: center;
+        grid-area: hero;
+    }
+    
+    #products {
+        background-color: #FEEAFA;
+        grid-area: products;
+        display: grid;
+        grid-template-columns:  auto 320px auto;
+        grid-template-rows: 48% 4% 48%;
+        grid-template-areas:
+        ". toSabores ."
+        ". . ."
+        ". toPostres ."
+        ;
+        text-align: center;
+    }
+
+    #toSabores {
+        /* background-color: thistle; */
+        grid-area: toSabores;
+    }
+    #toPostres {
+        /* background-color: steelblue; */
+        grid-area: toPostres;
+    }
+
+    #products article {
+        display: flex;
+        flex-direction: column;
+    }
+    #products article h2 {
+        background-color: #DEE2FF;
+        font-size: none;
+        font-family: none;
+    }
+    #products article a {
+        background-image: url(../images/sabores_/pexels-francesco-paggiaro-716575.jpg);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 100%;
+    }
+
+
+    
+    
+    
+    footer {
+        background-color: #CBC0D3;
+        grid-area: footer;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 52% auto auto auto 10%;
+        grid-template-areas:
+        "newsletter"
+        "."
+        "social"
+        "."
+        "rights"
+        ;
+        text-align: center;
+    }
+    
+    #newsletter {
+        /* background-color: skyblue; */
+        grid-area: newsletter;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: 22px;
+        font-family: none;
+    }
+
+    .emailAndButtom {
+        padding: 8px;
+        background-color: none;
+        border: 2px solid black;
+        border-radius: 5px;
+        font-size: 16px;
+        font-family: none;
+    }
+    #emailId {
+        background-color: none;
+        border: 1px solid gray;
+        border-radius: 0px;
+    }
+    
+    #social {
+        /* background-color: violet; */
+        grid-area: social;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #social p {
+        display: none;
+    }
+    #social a {
+        padding: 0px 15px;
+    }
+    
+    #rights {
+        background-color: #8E9AAF;
+        grid-area: rights;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+
+}
+
+
+
+
+
+@media only screen and (min-width: 720px) {
+
+    #newsletter {
+        width: 720px;
+        justify-self: center;
+    }
+
+}
+
+
+
+
+
+@media only screen and (min-width: 1024px) {
+
+    main {
+        grid-template-rows: 3% 50% 3% 41% 3%;
+    }
+     
+    #products {
+        grid-template-columns: auto 384px 384px auto;
+        grid-template-rows: auto 270px auto;
+        grid-template-areas:
+        ". . . ."
+        ". toSabores toPostres ."
+        ". . . ."
+        ;
+        grid-gap: 4%;
+    }
+
+}
+
+
+
+
+
+@media only screen and (min-width: 1200px) {
+
+    header {
+        grid-template-columns: 5% 15% 31% 44% 5%;
+        grid-template-areas:
+        ". logo . nav ."
+        ;
+    }
+
+    nav {
+        /* background-color: red; */
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    #menu {
+        /* background-color: gray; */
+        width: 550px;
+        height: 100%;
+        font-size: 25px;
+        font-family: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #menu li {
+        background-color: #F0ECE3;
+        padding: 5px 10px;
+        border-radius: 20px;
+    }
+    #menu li a {
+        color: black;
+    }
+
+}
+
+
+
+
+
+@media only screen and (min-width: 1600px) {
+
+    footer {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 52% auto 10%;
+        grid-template-areas:
+        "newsletter social"
+        ". ."
+        "rights rights"
+        ;
+    }
+
+}
+
+
+
+
+
+/* POSTRES PAGE */
+
+
+
+
+
+@media only screen and (min-width: 320px) {
+
+    #posMain {
+        /* background-color: aqua; */
+        grid-template-columns: 100%;
+        grid-template-rows: 80% 20%;
+        grid-template-areas:
+        "desserts"
+        "posToSabores"
+        ;
+    }
+
+    #desserts {
+        /* background-color: green; */
+        grid-area: desserts;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 90%;
+        grid-template-areas:
+        "dH1"
+        "posContainers"
+        ;
+        text-align: center;
+    }
+
+    #desserts h1 {
+        /* background-color: gainsboro; */
+        grid-area: dH1;
+        align-self: center;
+    }
+
+    #posContainers {
+        grid-area: posContainers;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #posContainers article {
+        /* background-color: aliceblue; */
+        padding: 3.3% ;
+    }
+
+    #desserts p {
+        font-size: 24px;
+    }
+
+    #posToSabores {
+        /* background-color: greenyellow; */
+        grid: posToSabores;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #posToSabores a {
+        /* background-color: darkorchid; */
+        font-size: 26px;
+        font-family: none;
+        color: white;
+        padding: 10px;
+        border-radius: 25px;
+    }
+
+}
+
+
+
+
+
+@media only screen and (min-width: 720px) {
+
+    #newsletter {
+        width: 720px;
+        display: flex;
+        justify-self: center;
+    }
+
+    #posContainers {
+        width: 720px;
+        justify-self: center;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
