@@ -167,6 +167,11 @@
         border: 1px solid gray;
         border-radius: 0px;
     }
+    #buttomId:hover {
+        background-color: #DEE2FF;
+        transform: scale(1.02);
+        transition: .6s;
+    }
     
     #social {
         /* background-color: violet; */
@@ -264,6 +269,10 @@
         background-color: #F0ECE3;
         padding: 5px 10px;
         border-radius: 20px;
+    }
+    #menu li:hover {
+        background-color: #ffffff;
+        transition: .6s;
     }
     #menu li a {
         color: black;
